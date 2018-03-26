@@ -1,4 +1,4 @@
-import { Mongo } from "meteor/mongo"
+import { Mongo } from "meteor/mongo";
 
-const Developers = new Mongo.Collection('Players');
-export {Developers}
+const Developers = new Mongo.Collection("Players");
+export { Developers };
