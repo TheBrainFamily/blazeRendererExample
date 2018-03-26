@@ -5,21 +5,40 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-  {{> info}}
+{{> main }}
 </body>
 
+<template name="main">
+
+    {{> hello}}
+    {{> info}}
+    {{> developers }}
+</template>
 <template name="hello">
   <button>Click Me</button>
+    <div>
   <p>You've pressed the button {{counter}} times.</p>
+    </div>
 </template>
 
 <template name="info">
   <h2>Learn Meteor!</h2>
-  <ul>
+  <ul class="test-meteor-links">
     <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
     <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul>
+</template>
+
+<template name="developers">
+    <div class="test-developers">
+        {{#if developers.length}}
+            <li>
+            {{#each developers}}
+                <ul>{{name}} {{surname}} @{{company}}</ul>
+                {{/each}}
+            </li>
+        {{else}}
+            <p>No developers :-(</p>
+        {{/if}}
+    </div>
 </template>

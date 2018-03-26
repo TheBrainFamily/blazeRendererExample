@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-
+import {Developers} from "../imports/collections/Developers"
 import './main.html';
 
 Template.hello.onCreated(function helloOnCreated() {
@@ -20,3 +20,9 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+
+Template.developers.helpers({
+  developers() {
+    return Developers.find({})
+  }
+})

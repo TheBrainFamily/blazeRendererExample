@@ -1,0 +1,21 @@
+{
+  "env": {
+    "testing": {
+      "presets": [
+        "es2015-without-strict"
+      ],
+      "plugins": [
+        "ignore-html-and-css-imports",
+        "transform-object-rest-spread",
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "meteor": "./node_modules/testable-meteor/dist/stubs"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

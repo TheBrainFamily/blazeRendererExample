@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders main 1`] = `
+"<button>Click Me</button>
+<div>
+    <p>You've pressed the button 0 times.</p>
+</div>
+<h2>Learn Meteor!</h2>
+<ul class=\\"test-meteor-links\\">
+    <li><a href=\\"https://www.meteor.com/try\\" target=\\"_blank\\">Do the Tutorial</a></li>
+    <li><a href=\\"http://guide.meteor.com\\" target=\\"_blank\\">Follow the Guide</a></li>
+</ul>
+<div class=\\"test-developers\\">
+
+    <p>No developers :-(</p>
+
+</div>"
+`;
