@@ -1,0 +1,20 @@
+{
+  "name": "todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.36",
+    "meteor-node-stubs": "^0.3.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-plugin-ignore-html-and-css-imports": "0.0.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "blaze-renderer": "^0.8.0",
+    "jest": "^22.4.3"
+  }
+}
