@@ -15,7 +15,7 @@ test(
   "it displays the developers when available",
   runInFiber(() => {
     Developers.insert({name: "Lukasz", surname: "Gandecki", company: "TheBrain Software House"});
-    Developers.insert({ name: "Sam", surname: "Hatoum", company: "Xolv.io" });
+    Developers.insert({name: "Sam", surname: "Hatoum", company: "Xolv.io" });
 
     const $ = cheerio.load(renderBlaze("main"));
 
@@ -29,6 +29,16 @@ test(
   })
 );
 ```
+
+# Based on
+
+This is a very basic example of how to use two packages that we extensively use at TheBrain Software house:
+
+https://github.com/TheBrainFamily/testable-meteor
+
+https://github.com/TheBrainFamily/blazeRenderer
+
+There is much more to them than we can show in this simple repo, but we have been hiding those packages long enough, so this is the first step. We are planning to do much more extensive writing on them soon!
 
 # To see what this in more details what this is all about
 
