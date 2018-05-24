@@ -3,7 +3,7 @@ Simple example of BlazeRenderer use. We are working on more robust and complex e
 
 # Why?
 
-Meteor testing tooling skyrocketed in the last few years, with jest along wallabyjs leading the way to really unheard of testing experience.
+JavaScript testing tooling skyrocketed in the last few years, with jest along wallabyjs leading the way to really unheard of testing experience.
 We wanted to be able to use those advances in the JS world - like amazing jest watch mode or wallabyjs real-time-test-reloads with meteor. [testable-meteor](https://github.com/TheBrainFamily/testable-meteor) package makes it possible for React, [testable-meteor](https://github.com/TheBrainFamily/testable-meteor) + [blazeRenderer](https://github.com/TheBrainFamily/blazeRenderer) makes it possible for blaze, which is even harder, since blaze is so coupled with Meteor. 
 
 # Let the "picture" be worth a thousand words:
